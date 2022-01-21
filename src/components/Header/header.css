@@ -1,0 +1,102 @@
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  box-shadow:	0 4px 8px 0 rgba(0,0,0,0.30);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #00487c;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.navbar-left{
+	display: flex;
+}
+
+.Test{
+  color: black;
+}
+
+.navbar-right{
+	display: flex;
+}
+
+.navbar-button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00487C;
+  transition: background-color 0.3s ease-in;
+}
+
+.navbar-search{
+  display: flex;
+  border: none;
+}
+
+.navbar-search-form {
+  display: flex;
+}
+
+.navbar-search-input{
+	width: 300px;
+	border: 2px solid #EEF8FE;
+	font-size: 14px;
+  height: 34px;
+}
+
+.navbar-search-input:focus{
+  transition: .5s;
+  border: 2px solid #00A6FB;
+  outline: none;
+}
+
+.navbar-search-button {
+	background-color: #00487C;
+	cursor: pointer;
+	border: none;
+  padding: 0;
+  border-radius: 0;
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: relative;
+}
+
+.navbar-search-image {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+	background-size: 100%;
+}
+
+.navbar-search-button:hover{
+	background-color: #00A6FB;
+
+}
+.navbar-button:hover {
+	-webkit-animation: bounce-top 0.9s both;
+	        animation: bounce-top 0.9s both;
+  background-color: #00A6FB;
+  transition: background-color 0.3s ease-in;
+}
+
+.navbar-button:active {
+  color: blue;
+  background-color: #00487C;
+  transition: background-color 0.1s ease-in;
+}
+
+.navbar-text{
+	color: white;
+	padding: 15px;
+}

@@ -1,0 +1,141 @@
+.messages {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.messages-content {
+  display: flex;
+  flex-direction: row;
+  height: 95%;
+  padding-top: 40px;
+}
+
+.messages-sidebar {
+  height: 95%;
+}
+
+.messages-messenger {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.messages-messages{
+  height: 95%;
+  overflow-y: scroll;
+  font-size: 20px;
+  font-weight: 300;
+}
+.NoMessages{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.messages-messenger-container {
+  box-shadow:	0 2px 4px 0 rgba(0,0,0,0.50);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.messages-messenger-input {
+  font-size: 20px;
+  width: 100%;
+  border: 2px solid #EEF8FE;
+
+}
+
+.messages-messenger-input:focus {
+  transition: .5s;
+  border: 2px solid #00A6FB;
+  outline: none;
+}
+
+.messages-messenger-sender {
+  width: 100px;
+  background-color: #F5B700;
+  border: none;
+}
+
+.messages-confirmtransaction-confirm{
+  width: 125px;
+  background-color: #00A6FB;
+  border: none;
+}
+.messages-confirmtransaction-confirm:hover{
+  
+  background-color: #00CEFB;
+}
+.messages-confirmtransaction-cancel {
+  width: 125px;
+  background-color: #00CEFB;
+  border: none;
+}
+.messages-confirmtransaction-cancel:hover {
+  width: 125px;
+  background-color: #49deff;
+  border: none;
+}
+.messages-confirmtransaction-complete, .messages-confirmtransaction-loading{
+  width: 125px;
+  border: none;
+  
+}
+.messages-sent {
+  color: white;
+  text-align:right;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 12px;
+  align-items: center;
+}
+.messages-sent-text{
+
+  background-color: grey;
+  border-radius: 6px;
+  padding: 12px;
+
+}
+.messages-sent .hover{
+    visibility: hidden;
+    width: 120px;
+    color: gray;
+    text-align: center;
+}
+.messages-sent:hover .hover {
+    visibility: visible;
+}
+.messages-received {
+  color: white;
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.messages-received-text{
+
+  background-color: #39ACFC;
+  border-radius: 6px;
+  padding: 12px;
+
+}
+.messages-received .hover{
+    visibility: hidden;
+    width: 120px;
+    color: gray;
+    text-align: center;
+}
+.messages-received:hover .hover{
+    visibility: visible;
+}
+
+.messages-messenger-sender:hover{
+    background-color:#FBC500;
+}
+.messages-confirmtransaction:hover{
+  background-color: #00CEFB;
+}
